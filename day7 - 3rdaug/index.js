@@ -41,3 +41,45 @@ for(let row=1;row<=n;row++)
     
 }
 console.log(pattern);
+
+//animesh code
+
+let n=5;
+let string ='';
+let l=1;
+for(i=n;i>0;i--)
+{
+   for(j=0;j<i;j++)
+   {
+    string +='  ';
+   }
+   for(k=1;k<=l;k++)
+   {
+    string +=k + ' ';
+   }
+   for(m=l;m>1;m--)
+   {
+    string +=m-1 + ' ';
+   }
+   l++;
+   string +='\n';
+}
+m=n;
+for(i=1;i<n;i++)
+{
+    for(j=i+1;j>0;j--)
+    {
+        string +='  ';
+    }
+    for(k=1;k<m;k++)
+    {
+        string +=k + ' ';
+    }
+    m--;
+    for(p=m-1;p>0;p--)
+    {
+        string+=p + ' ';
+    }
+    string +='\n';
+}
+console.log(string);
